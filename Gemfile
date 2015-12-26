@@ -44,3 +44,27 @@ group :development, :test do
   gem 'spring'
 end
 
+
+gem 'administrate'
+gem 'bootstrap-sass'
+gem 'devise'
+gem 'high_voltage'
+gem 'pg'
+gem 'pundit'
+gem 'simple_form'
+gem 'therubyracer', :platform=>:ruby
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_21]
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+end
+
+group :development, :test do
+  gem 'unicorn'
+  gem 'unicorn-rails'
+end
+
