@@ -16,7 +16,7 @@ gem 'administrate',git: 'https://github.com/gustavo-alb/administrate.git'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'high_voltage'
-gem 'pg'
+
 gem 'pundit'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
