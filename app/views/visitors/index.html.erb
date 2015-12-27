@@ -4,11 +4,12 @@ Nossos Sistemas
     <div class="row">
         <% Sistema.all.each do |s|%>
         <div class="col-lg-4 col-sm-6 text-center">
-           <%= image_tag s.imagem, :class=>"img-circle img-responsive"%>
+           <%= link_to image_tag(s.imagem, :class=>"img-circle img-responsive"),"#",:'data-toggle'=>'modal',:'data-target'=>"#modal#{s.id}"%>
             <h3><%=s.sigla%><br/>
                 <small><%=s.nome%></small>
             </h3>
             <p><%=s.descricao.truncate(150)%></p>
         </div>
+        <%= render :partial=>'detalhes',:locals=>{:s=>s}%>
         <% end %>
     </div>
