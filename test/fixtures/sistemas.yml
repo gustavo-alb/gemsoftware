@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  sigla: MyString
+  descricao: MyString
+  inicio: 2015-12-26
+  termino: 2015-12-26
+  em_andamento: false
+  cliente: MyString
+
+two:
+  nome: MyString
+  sigla: MyString
+  descricao: MyString
+  inicio: 2015-12-26
+  termino: 2015-12-26
+  em_andamento: false
+  cliente: MyString
