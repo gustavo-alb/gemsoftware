@@ -15,7 +15,7 @@ choose  Enter your selection: [none]
 option  Web server for development?
 choose  Enter your selection: [unicorn]
 option  Web server for production?
-choose  Enter your selection: [passenger]
+choose  Enter your selection: [unicorn]
 option  Database used in development?
 choose  Enter your selection: [postgresql]
 option  Template engine?
@@ -43,7 +43,7 @@ choose  Enter your selection: [about+users]
 option  Set a locale?
 choose  Enter your selection: [none]
 option  Install page-view analytics?
-choose  Enter your selection: [ga]
+choose  Enter your selection: [none]
 option  Add a deployment mechanism?
 choose  Enter your selection: [none]
 option  Set a robots.txt file to ban spiders?
@@ -59,4 +59,4 @@ choose  Enter your selection: [true]
 option  Use 'pry' as console replacement during development and test?
 choose  Enter your selection: [false]
 option  Use or create a project-specific rvm gemset?
-choose  Enter your selection: [false]
+choose  Enter your selection: [true]
