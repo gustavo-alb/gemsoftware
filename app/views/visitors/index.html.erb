@@ -1,35 +1,14 @@
-<!-- Page Content -->
-<div class="container">
-
-    <!-- Introduction Row -->
+<%=content_for :titulo do%>
+Nossos Sistemas
+<%end%>
     <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Sobre a empresa
-                <small>GemSoftware</small>
-            </h1>
-            <p>A missão desta empresa é simplificar e agilizar o desenvolvimento de softwares, com tecnologias de ponta e conceitos inovadores, nunca ficando presa a conceitos antigos e dogmas.</p>
-        </div>
-    </div>
-
-    <!-- Team Members Row -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Nossos sistemas</h2>
-        </div>
         <% Sistema.all.each do |s|%>
         <div class="col-lg-4 col-sm-6 text-center">
            <%= image_tag s.imagem, :class=>"img-circle img-responsive"%>
-            <h3><%=s.sigla%>
+            <h3><%=s.sigla%><br/>
                 <small><%=s.nome%></small>
             </h3>
-            <p><%=s.descricao%></p>
+            <p><%=s.descricao.truncate(150)%></p>
         </div>
         <% end %>
     </div>
-
-    <hr>
-
-    <!-- Footer -->
-    
-</div>
-<!-- /.container -->
