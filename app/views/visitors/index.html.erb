@@ -1,15 +1,15 @@
 <%=content_for :titulo do%>
-Nossos Sistemas
+  Nossos Sistemas
 <%end%>
-    <div class="row">
-        <% Sistema.all.each do |s|%>
-        <div class="col-lg-4 col-sm-6 text-center">
-           <%= link_to image_tag(s.imagem, :class=>"img-circle img-responsive"),"#",:'data-toggle'=>'modal',:'data-target'=>"#modal#{s.id}"%>
-            <h3><%=s.sigla%><br/>
-                <small><%=s.nome%></small>
-            </h3>
-            <p><%=s.descricao.truncate(150)%></p>
-        </div>
-        <%= render :partial=>'detalhes',:locals=>{:s=>s}%>
-        <% end %>
+<div class="row">
+  <% Sistema.all.each do |s|%>
+    <div class="col-lg-3 col-sm-5 text-center">
+      <%= link_to image_tag(s.imagem, :class=>"img-square img-responsive"),"#",:'data-toggle'=>'modal',:'data-target'=>"#modal#{s.id}"%>
+      <h4><%=s.sigla%><br/>
+        <small><%=s.nome%></small>
+      </h4>
+      <p><%=s.descricao.truncate(150)%></p>
     </div>
+    <%= render :partial=>'detalhes',:locals=>{:s=>s}%>
+  <% end %>
+</div>
