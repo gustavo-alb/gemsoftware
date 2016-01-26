@@ -52,10 +52,10 @@ test:
 
 production:
   adapter:  postgresql
-  host:     localhost
+  host:     ec2-54-225-195-249.compute-1.amazonaws.com
   encoding: unicode
-  database: gemsoftware_production
+  database: d1vdjuk9rs9b7j
   pool:     5
-  username: postgres
-  password: malocasoft
+  username: dfbdulqwpyuwsa
+  password: uTt66OKOgTBjOm2eVGh8BbzPjo
   template: template0
