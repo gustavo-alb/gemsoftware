@@ -28,3 +28,4 @@ group :development do
 end
 gem 'carrierwave'
 gem 'simple_form_fancy_uploads'
+gem 'sprockets-rails', '2.3.3'
